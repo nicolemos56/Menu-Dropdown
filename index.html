@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="/style.css">
     <title>esafio de Construção de um Menu Dropdown</title>
+
 <style>
    
 </style>
 </head>
 <body>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Lista1</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-
-      </div>
-   
-
-
-
-
-
-
-
-
-    <footer>
+    <header>
+      <nav class="navbar">
         
-    </footer>
-    <script src="js.js"></script>
+        <ul class="menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Acerca</a></li>
+           <li class="dropdown">
+            <button class="btndrop" onclick="minhafuncao()">Perfil</button>
+               <div id="idMenuDropdown" class="menu-dropdown">
+                <a href="">item1</a>
+                <a href="">item2</a>
+               </div>
+           </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+    <script>
+   
+    </script>
+<script src="js.js"></script>
+    
 </body>
 </html>

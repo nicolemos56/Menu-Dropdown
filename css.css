@@ -32,7 +32,7 @@ header > .navbar > ul.menu > li{
   margin: 10px 20px;
 }
 header > .navbar > ul.menu > li.dropdown{
-  background-color:red;
+
   position: relative;
   display: inline-block;
 }

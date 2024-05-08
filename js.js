@@ -3,8 +3,10 @@ function minhafuncao(){
   menudropdown.classList.toggle("show"); 
 }
 
+
+
 window.onclick = function(event) {
-  if (!event.target.matches('.btndrop')) {
+  if (!event.target.matches('.btndrop') && !event.target.closest('.menu-container')) { 
     var dropdowns = document.getElementsByClassName("menu-dropdown");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -15,3 +17,4 @@ window.onclick = function(event) {
     }
   }
 }
+

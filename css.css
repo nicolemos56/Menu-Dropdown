@@ -20,6 +20,8 @@ header .navbar{
 
 }
 header > .navbar > ul.menu{
+  display: inline-block;
+
   width: 100%;
   text-align: right;
   position: relative;
@@ -34,9 +36,9 @@ header > .navbar > ul.menu > li{
 header > .navbar > ul.menu > li.dropdown{
 
   position: relative;
-  display: inline-block;
 }
-header > .navbar > ul.menu > li.dropdown > .btndrop{
+
+ .btndrop{
   background-color: #3498DB;
   color: #fff;
   padding: 15px;
@@ -44,23 +46,24 @@ header > .navbar > ul.menu > li.dropdown > .btndrop{
   border-radius: 35px;
   cursor: pointer;
 }
-header > .navbar > ul.menu > li.dropdown > .btndrop:hover, .btndrop:focus{
+ .btndrop:hover, .btndrop:focus{
   background-color: #010b12;
  
   
 }
-header > .navbar > ul.menu > li.dropdown > .btndrop{
+.btndrop{
   background-color: #3498DB;
 
-}header > .navbar > ul.menu > li.dropdown > .menu-dropdown{
-
+}
+ .menu-dropdown{
+ background-color: #1a1a1a;
   position: absolute;
   z-index: 1;
   display: none;
 
 }
 
-header > .navbar > ul.menu > li a{
+li a{
  color: #fff;
  text-decoration: none;
  display: block;
@@ -70,4 +73,6 @@ header > .navbar > ul.menu > li a:hover{
  }
  .show{
   display: block;
+  margin-top: 4px;
+  font-size: 22px;
  }
